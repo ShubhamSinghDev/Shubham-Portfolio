@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!--NAVBAR START HERE-->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-10 text-white">
+        <nav class="flex justify-between items-center my-container h-24 ">
+            <!--Logo-->
+            <a href="#" class="logo text-3xl font-bold">Shubham</a>
+            <!-- DESKTOP MENU -->
+            <ul class="md:flex items-center gap-14 hidden">
+                <li><a href="#home" class="uppercase text-[13px] hover:text-yellow-400">Home</a></li>
+                <li><a href="#about" class="uppercase text-[13px] hover:text-yellow-400">About</a></li>
+                <li><a href="#whatido" class="uppercase text-[13px] hover:text-yellow-400">What i do</a></li>
+                <li><a href="#skills" class="uppercase text-[13px] hover:text-yellow-400">Skills</a></li>
+                <li><a href="#certifications" class="uppercase text-[13px] hover:text-yellow-400">Certifications</a>
+                </li>
+                <li><a href="#contact" class="uppercase text-[13px] hover:text-yellow-400">Contact</a></li>
+            </ul>
+
+            <!-- HAMBURGER -->
+            <a href="#" id="burger" class="text-2xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <ul id="menu" class="flex flex-col items-center justify-center 
+     gap-8 md:hidden absolute left-0 top-0 bottom-0 bg-white w-60 -translate-x-full transition:transform duration-300">
+        <li><a href="#home" class="uppercase text-[13px] hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="uppercase text-[13px] hover:text-yellow-400">About</a></li>
+        <li><a href="#whatido" class="uppercase text-[13px] hover:text-yellow-400">What i do</a></li>
+        <li><a href="#skills" class="uppercase text-[13px] hover:text-yellow-400">Skills</a></li>
+        <li><a href="#certifications" class="uppercase text-[13px] hover:text-yellow-400">Certifications</a></li>
+        <li><a href="#contact" class="uppercase text-[13px] hover:text-yellow-400">Contact</a></li>
+    </ul>
+    <!-- SECTION START HERE -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home"
+            class="flex items-center justify-center bg-[url(/assets/hero-bg.jpg)] bg-center bg-cover h-screen">
+            <div class="my-container">
+                <h1 id="typing" class="text-7xl md:text-8xl text-white font-semibold tracking-tighter h-30"></h1>
+                <!-- SOCIAL ICONS -->
+                <ul class="flex items-center justify-center gap-8">
+                    <li>
+                        <a href="#" class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-google-plus-g"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="my-container sections-pb flex md:flex-row flex-col items-center gap-10">
+                <img src="assets/profile.jpg" class="w-full m:w-1/3">
+                <div>
+                    <h2 class="text-neutral-800 text-4xl/12 md:text-5xl/16 md:max-w-xl ">I'm Shubham Singh, Web Designer
+                        & Web Developer from India</h2>
+                    <p class="text-grey-500 mt-8 mb-15 text-sm/7 md:text-base/9">
+                        I have rich experience in web site design & building and customization. Also i am good at
+                        html,css,javascript, wordpress, python,jquery,bootstrap. I love to talk with you about out
+                        unique approach.
+                    </p>
+                    <a href="#"
+                        class="bg-yellow-400 text-sm text-netural-800 p-3 tracking-widest hover:bg-yellow-300">Download
+                        Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT I DO SECTION -->
+        <section id="whatido" class="bg-gray-100">
+            <div class="my-container sections-pb ">
+                <h3 class="text-4xl text-neutral-800">What I Do</h3>
+                <div class="flex md:flex-row flex-col mt-10 gap-14">
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lightbulb text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Brands
+                            Indentity</h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-wand-sparkles text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Web Design
+                        </h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col mt-10 gap-14">
+                    <div>
+                        <i class="fa-brands fa-android text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Mobile Apps
+                        </h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Analytics</h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-camera text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Photograph
+                        </h5>
+                        <p class="text-grey-400 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            ccusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Skills section -->
+
+        <section id="skills" class="skills-section">
+            <div></div>
+            <div class="w-full lg:w-1/2">
+                <h3 class="text-5xl text-center font-bold text-neutral-800 underline underline-offset-8 mb-14">Skills
+                    Section</h3>
+                <div class="grid grid-cols-2 gap-10">
+                    <div>
+                        <h4 class="text-xl font-semibold text-center text-neutral-800 mb-4">Python</h4>
+                        <div class="circular-skill">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" stroke="#e5e7eb" />
+                                <circle cx="60" cy="60" r="50" stroke="#facc15" stroke-dasharray="314"
+                                    stroke-dashoffset="47.1" />
+                                <text x="60" y="60">85%</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-center text-neutral-800 mb-4">Java</h4>
+                        <div class="circular-skill">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" stroke="#e5e7eb" />
+                                <circle cx="60" cy="60" r="50" stroke="#facc15" stroke-dasharray="314"
+                                    stroke-dashoffset="78.5" />
+                                <text x="60" y="60">75%</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-center text-neutral-800 mb-4">SQL</h4>
+                        <div class="circular-skill">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" stroke="#e5e7eb" />
+                                <circle cx="60" cy="60" r="50" stroke="#facc15" stroke-dasharray="314"
+                                    stroke-dashoffset="62.8" />
+                                <text x="60" y="60">80%</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-center text-neutral-800 mb-4">HTML</h4>
+                        <div class="circular-skill">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" stroke="#e5e7eb" />
+                                <circle cx="60" cy="60" r="50" stroke="#facc15" stroke-dasharray="314"
+                                    stroke-dashoffset="31.4" />
+                                <text x="60" y="60">90%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 px-8">
+                <div class="linear-skill">
+                    <h4>Python</h4>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="linear-skill">
+                    <h4>Java</h4>
+                    <div class="bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="linear-skill">
+                    <h4>SQL</h4>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="linear-skill">
+                    <h4>HTML</h4>
+                    <div class="bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="linear-skill">
+                    <h4>CSS</h4>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-center font-bold text-neutral-800 underline underline-offset-8 mb-10">
+                    Certifications Section</h3>
+
+                <div class="flex flex-row flex-wrap justify-between gap-6">
+                    <!-- Data Analytics Card -->
+                    <div class="cert-card bg-white rounded-xl shadow-md overflow-hidden w-full md:w-[32%] p-5">
+                        <img src="assets/blog1.jpg" class="rounded-md w-full" alt="Data Analytics">
+                        <h4 class="text-xl font-semibold text-neutral-800 mt-5">Data Analytics Certification</h4>
+                        <p class="text-gray-600 mt-3">Completed a comprehensive program focused on data wrangling,
+                            visualization.</p>
+                        <details class="mt-4">
+                            <summary
+                                class="cursor-pointer bg-yellow-400 inline-block px-4 py-2 text-sm rounded hover:bg-yellow-300">
+                                Read More</summary>
+                            <div class="text-sm text-gray-500 mt-3">
+                                Learned data cleaning, exploration, and visualization using Python, Pandas, and Excel.
+                                Developed
+                                dashboards, performed statistical analysis, and interpreted data trends to support
+                                decision-making with real-world datasets.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- QA Card -->
+                    <div class="cert-card bg-white rounded-xl shadow-md overflow-hidden w-full md:w-[32%] p-5">
+                        <img src="assets/blog2.jpg" class="rounded-md w-full" alt="QA Certification">
+                        <h4 class="text-xl font-semibold text-neutral-800 mt-5">QA Training Certification</h4>
+                        <p class="text-gray-600 mt-3">Completed QA training covering manual testing, test cases, and bug
+                            tracking tools.</p>
+                        <details class="mt-4">
+                            <summary
+                                class="cursor-pointer bg-yellow-400 inline-block px-4 py-2 text-sm rounded hover:bg-yellow-300">
+                                Read More</summary>
+                            <div class="text-sm text-gray-500 mt-3">
+                                Focused on software testing life cycles, writing test cases, identifying bugs, and using
+                                tools
+                                like Selenium and JIRA. Practiced both manual and automation testing in Agile workflows.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Full Stack Card -->
+                    <div class="cert-card bg-white rounded-xl shadow-md overflow-hidden w-full md:w-[32%] p-5">
+                        <img src="assets/blog3.jpg" class="rounded-md w-full" alt="Full Stack Development">
+                        <h4 class="text-xl font-semibold text-neutral-800 mt-5">Full Stack Web Development</h4>
+                        <p class="text-gray-600 mt-3">Built full-featured web apps using frontend and backend tools with
+                            deployment skills.</p>
+                        <details class="mt-4">
+                            <summary
+                                class="cursor-pointer bg-yellow-400 inline-block px-4 py-2 text-sm rounded hover:bg-yellow-300">
+                                Read More</summary>
+                            <div class="text-sm text-gray-500 mt-3">
+                                Covered HTML, CSS, JavaScript, React, Node.js, MongoDB. Built and deployed responsive
+                                applications with user authentication and REST APIs for real-world usage.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section id="contact">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Contact Us</h3>
+                <form>
+                    <div class="flex md:flex-row flex-col mt-10 gap-10">
+                        <input type="text" name="name" placeholder="NAME" autocomplete="off"
+                            class="field flex-1 border-b-2 border-gray-100  py-3 placeholder-gray-500 text-sm ">
+                        <input type="number" name="number" placeholder="Number"
+                            class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                    </div>
+                    <div class="flex md:flex-row flex-col mt-10 gap-10">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off"
+                            class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                        <input type="text" name="subject" placeholder="Subject"
+                            class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                    </div>
+                    <div class="mt-10">
+                        <textarea name="message" placeholder="Message"
+                            class="field resize-none w-full h-32 border-b-2 border-gray-100 placeholder-gray-500 text-sm"></textarea>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#"
+                            class="bg-yellow-400 text-sm text-netural-800 p-3 tracking-widest hover:bg-yellow-300">Send
+                            Messages</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER STARTS HERE -->
+    <footer class="bg-gray-100 ">
+        <div class="flex flex-col items-center justify-center py-15 text-center"><!-- SOCIAL ICONS -->
+            <ul class="flex gap-5">
+                <li
+                    class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration:300">
+                    <a href="#" class="text-neutral-800 text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li
+                    class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration:300">
+                    <a href="#" class="text-neutral-800 text-xl"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li
+                    class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration:300">
+                    <a href="#" class="text-neutral-800 text-xl"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li
+                    class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration:300">
+                    <a href="#" class="text-neutral-800 text-xl"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li
+                    class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration:300">
+                    <a href="#" class="text-neutral-800 text-xl"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+            </ul>
+            <div mt-5>
+                <p class="text-sm text-gray-500">&copy; Shubham all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
