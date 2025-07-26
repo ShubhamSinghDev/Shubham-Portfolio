@@ -20,6 +20,37 @@ html{
     padding-block: 7.5rem;
 }
 
+/* Transition for smooth theme change */
+body {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #111827;
+  color: white;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #1f2937;
+}
+
+body.dark .cert-card {
+  background-color: #1f2937;
+  color: white;
+}
+
+body.dark .text-neutral-800,
+body.dark .text-gray-600,
+body.dark .text-gray-500 {
+  color: white !important;
+}
+
+body.dark .bg-gray-100 {
+  background-color: #111827 !important;
+}
+
 .logo,h2,h3{font-family: "Kaushan Script", cursive;}
 .field:focus{
     outline:none;
